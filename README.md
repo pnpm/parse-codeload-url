@@ -1,5 +1,7 @@
 # parse-codeload-url
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pnpm/parse-codeload-url.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/pnpm/parse-codeload-url.svg?branch=master)](https://travis-ci.org/pnpm/parse-codeload-url)
 
 > Parse a tarball URL hosted on codeload.github.com
