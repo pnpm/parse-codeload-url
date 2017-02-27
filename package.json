@@ -1,6 +1,6 @@
 {
   "name": "parse-codeload-url",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Parse a tarball URL hosted on codeload.github.com",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
