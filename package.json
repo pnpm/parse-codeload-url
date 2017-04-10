@@ -8,10 +8,20 @@
     "lib"
   ],
   "scripts": {
-    "test": "npm run lint && ts-node test",
+    "test": "npm run lint && ts-node test && npm run test-markdown",
     "lint": "tslint -c tslint.json --project .",
     "tsc": "tsc",
-    "prepublish": "npm test && npm run tsc"
+    "prepublish": "npm test && npm run tsc",
+    "test-markdown": "tsc && mos test",
+    "md": "mos"
+  },
+  "mos": {
+    "plugins": [
+      "readme"
+    ],
+    "installation": {
+      "useShortAlias": true
+    }
   },
   "repository": {
     "type": "git",
@@ -23,7 +33,10 @@
     "url",
     "tarball"
   ],
-  "author": "Zoltan Kochan",
+  "author": {
+    "name": "Zoltan Kochan",
+    "url": "https://www.kochan.io"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pnpm/parse-codeload-url/issues"
@@ -31,6 +44,8 @@
   "homepage": "https://github.com/pnpm/parse-codeload-url#readme",
   "devDependencies": {
     "@types/tape": "^4.2.29",
+    "mos": "^2.0.0-alpha.3",
+    "mos-plugin-readme": "^1.0.4",
     "tape": "^4.6.3",
     "ts-node": "^3.0.1",
     "tslint": "^5.0.0",
