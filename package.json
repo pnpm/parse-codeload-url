@@ -47,7 +47,7 @@
     "mos": "^2.0.0-alpha.3",
     "mos-plugin-readme": "^1.0.4",
     "tape": "^4.7.0",
-    "ts-node": "^3.2.0",
+    "ts-node": "^4.0.0",
     "tslint": "^5.5.0",
     "typescript": "^2.4.1"
   }
